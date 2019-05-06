@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingTop="56dp"
+    android:paddingRight="24dp"
+    >
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Tên đăng nhập"
+        android:textColorHint="#f52d56"
+        android:textColor="#f52d56"/>
+
+
+    <!-- Password Label -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#f52d56"
+        android:textColor="#f52d56"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:background="#f52d56"/>
+
+    <TextView
+        android:id="@+id/link_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Bạn chưa có tài khoản? Đăng ký ngay!"
+        android:textSize="16dp"
+        android:textColorHint="#f5f5f5"
+        android:textColor="#f52d56"/>
+    <Button
+        android:id="@+id/btnLoginByFacebook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:padding="12dp"
+        android:textColor="#f5f5f5"
+        android:text="Đăng nhập bằng Facebook"
+        android:background="#4267B2"/>
+    <Button
+        android:id="@+id/btnLoginByGoogle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:padding="12dp"
+        android:textColor="#FFFF"
+        android:text="Đăng nhập bằng Google"
+        android:background="#34A853"/>
+
+</LinearLayout>
