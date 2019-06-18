@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="20">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ giao hàng"
+            android:textColor="#262628"
+            android:textSize="19.2dp" />
+
+        <EditText
+            android:id="@+id/edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thành phố"/>
+        <EditText
+            android:id="@+id/edtTown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quận/huyện"/>
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô tả chi tiết"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh sách gọi món:"
+            android:textColor="#262628"
+            android:textSize="19.2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="16dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMilkTea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262628"
+            android:textSize="19.2dp"
+            android:text="Tổng đơn: " />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

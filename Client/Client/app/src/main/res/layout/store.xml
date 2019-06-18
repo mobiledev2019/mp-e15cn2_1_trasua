@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginLeft="12.5dp"
+        android:id="@+id/imgLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dingtea_logo" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="11.5dp"
+        android:text="Ding Tea"
+        android:textColor="#262628"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="6.3dp"
+        android:text="Địa chỉ"
+        android:textColor="#9b9b9b"
+        android:textSize="11sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/txtDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="6.3dp"
+        android:text="Khoang cach"
+        android:textColor="#9b9b9b"
+        android:textSize="11.5sp" />
+
+
+</LinearLayout>

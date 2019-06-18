@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f52d56">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:tint="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lịch sử mua hàng"
+                android:layout_marginLeft="95dp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16.7sp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbMap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng đang giao:"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvDelivering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="29dp"
+                android:background="#0b0b0b"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng đã giao"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trang chủ"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button3"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quanh đây"
+            android:background="@drawable/custom_button3"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button3"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm Vào giỏ"
+            android:background="@drawable/custom_button3"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
